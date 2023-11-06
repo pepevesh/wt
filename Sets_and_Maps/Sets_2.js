@@ -12,8 +12,8 @@ function hasElement(arr, t){
 
 rl.question('Enter array: ', (input_arr) => {
     rl.question('Enter target: ', (target) => {
-        arr = input_arr.split(" ").map(Number);
-        console.log(hasElement(arr, parseInt(target)));
+        arr = input_arr.split(" ").map((e) => parseInt(e.trim()));
+        console.log(hasElement(arr, parseInt(target.trim())));
         rl.close();
     });
 });
