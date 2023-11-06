@@ -20,7 +20,7 @@ function camelCase(input) {
 rl.question('Enter empID: ', (empID) => {
     let f = 0;
     empID = parseInt(empID);
-    const url = 'https://www.jsonkeeper.com/b/SKCJ';
+    const url = 'https://github.com/pepevesh/wt/blob/main/employeeData.json';
 
     fetch(url)
         .then(response => {
